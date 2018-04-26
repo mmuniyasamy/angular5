@@ -1,0 +1,12 @@
+<div>
+  <form>
+      <p>Your goal Count is:  {{ goalCount }}</p>
+      <input type="text" name="item" placeholder="Some text here.." [(ngModel)]="goalText">
+      <input type="submit" [value]="btnText" (click)="addGoal()">
+
+      <p *ngFor="let goal of goals; let i = index">{{ goal }}
+        <button type="button" value="Delete this goal" (click)="deleteGoal(i)">Delete this goal</button>
+      </p>
+  </form>
+  
+</div>

@@ -1,0 +1,6 @@
+<p>
+  This is what i'm all about. <a (click)="sendHome()" href="#">Take me home!!</a>
+</p>
+<ul>
+  <li *ngFor="let goal of goals; let i = index" (click)="deleteGoal(i)">{{ goal }}</li>
+</ul>
